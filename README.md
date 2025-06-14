@@ -1,53 +1,36 @@
-# Notas de aula (Atividade) - React - Compartilhando dados entre componentes usando Context
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Informações gerais
-- **Objetivo**: mostrar o compartilhamento de dados entre componentes usando context
-- **Público alvo**: alunos da disciplina de POS (Programação Orientada a Serviços) do curso de Infoweb (Técnico Integrado em Informática para Internet) no CNAT-IFRN (Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Natal-Central)
-- **Professor**: [L A Minora](https://github.com/leonardo-minora/)
-- **Aluno**: FIXME
+## Getting Started
 
----
-## Sumário
+First, run the development server:
 
-1. Links
-2. Pré-requisitos
-3. Tarefas
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 1. Links
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Notas de aula sobre context](https://github.com/infoweb-pos/2025-pos-react-compartilhando-dados-entre-componentes-exemplo-context)
-- [React](https://react.dev/learn)
-  - [context](https://react.dev/learn/passing-data-deeply-with-context)
-- [Next](https://nextjs.org/docs)
-  - [routing](https://nextjs.org/docs/app/building-your-application/routing)
-- Heroicons [lista de icones](https://heroicons.com/) [docs](https://github.com/tailwindlabs/heroicons)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
----
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 2. Pré-requisitos
+## Learn More
 
-1. Ter finalizado as **atividades** [Compartilhando dados entre componentes e introdução a Tailwindcss](https://github.com/infoweb-pos/2025-pos-03-react-compartilhando-dados-entre-componentes) e [Usando axios para acessar API](https://github.com/infoweb-pos/2025-pos-04-react-api-requisicao-axios)
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 3. Tarefas
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-1. Fork desse repositório e colocar o nome/link na linha 7 deste arquivo leia-me
-2. Copiar o projeto das atividades passadas para este repositório
-   - Pode codar num computador local, usando a instalação do node, ou remotamente, usando o [code spaces](https://github.com/features/codespaces)
-4. Codar segundo a estrutura do projeto abaixo
-   - `src` contendo todos os códigos-fonte
-   - `src/components` para os componentes react para compor a UI. Além do arquivo abaixo, você pode usar para os componentes que construiu.
-     - `src/components/Navbar.tsx` contendo o componente `Navbar` que comporá o `layout` da aplicação
-   - `src/data` para os recursos e dados compartilhados na aplicação, nesta atividade, para o contexto de tarefas
-     - `src/data/ContextTarefa.tsx` contendo os recursos para o provedor de contexto de tarefas
-   - `src/app` para as páginas
-      - `src/app/page.tsx` contendo a página de home
-      - `src/app/layout.tsx` contendo o layout da aplicação
-      - `src/app/tarefas/page.tsx` contendo a lista de tarefas. Lembrar de:
-        - se ainda vai iniciar a tela, usar diretamente os dados no jsx e depois mudar para uso de constante
-        - por fim, se já aproveitou o componente do projeto anterior é só mudar de `useState` para `useContext`, usar contexto
-      - `src/app/tarefas/nova/page.tsx` com um formulário para preencher e confirma a adição de tarefa nova
-   - `src/types` para os tipos utilizados na aplicação
-      - `src/types/tarefa.ts` contendo os diversos tipos referente a tarefa e lista de tarefas
-5. Lembrar que as atividades devem ser inicialmente carregadas de https://dummyjson.com/docs/todos
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
